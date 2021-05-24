@@ -773,7 +773,7 @@ VALUES ('C6', 'DNSPCD43C29E910S');
 
 /* Inserimenti per testing */
 INSERT INTO paziente (cf, nome, cognome, pwd)
-VALUES ('DNSPCD43C29E910S', 'Placido', 'Danesi', 'password');
+VALUES ('DNSPCD43C29E910S', 'Placido', 'Danesi', '5f4dcc3b5aa765d61d8327deb882cf99');
 
 INSERT INTO prenotazione (codice, paziente_cf, indirizzo_ospedale.via, indirizzo_ospedale.civico, indirizzo_ospedale.citta,
              id_specialista, data_pren, ora_pren)
