@@ -1,0 +1,11 @@
+Pazienti  con Prescrizione:
+
+Lucilla     |Fragala        |FRGLLL25L65B960D       |A      
+Giusto      |Orsini         |RSNGST16B17H861J       |B      
+Placido     |Danesi         |DNSPCD43C29E910S       |C  --> gia inserito con appuntamenti      
+
+Cdice senza Prescrizione: BLSDRD10A04I894O
+
+Prescazioni numerose:
+oncologia
+radiologia (TAC Risonanza)
