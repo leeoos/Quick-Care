@@ -771,6 +771,18 @@ VALUES ('C6', '1', '01/01/2020','ortopedia', 'Visita');
 INSERT INTO prescrizione_paziente (codice, paziente_cf)
 VALUES ('C6', 'DNSPCD43C29E910S');
 
+/* Inserimenti per testing */
+INSERT INTO paziente (cf, nome, cognome, pwd)
+VALUES ('DNSPCD43C29E910S', 'Placido', 'Danesi', 'password');
+
+INSERT INTO prenotazione (codice, paziente_cf, indirizzo_ospedale.via, indirizzo_ospedale.civico, indirizzo_ospedale.citta,
+             id_specialista, data_pren, ora_pren)
+VALUES ('C1', 'DNSPCD43C29E910S' , 'Viale del Policlinico','155','Roma', '9', '2021-05-25', '10.00');
+
+INSERT INTO prenotazione (codice, paziente_cf, indirizzo_ospedale.via, indirizzo_ospedale.civico, indirizzo_ospedale.citta,
+             id_specialista, data_pren, ora_pren)
+VALUES ('C2', 'DNSPCD43C29E910S' , 'Via dei Monti Tiburtini', '385', 'Roma', '25', '2021-05-25', '16.00');
+
 
 COMMIT;
 
