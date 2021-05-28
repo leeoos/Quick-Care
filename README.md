@@ -18,3 +18,9 @@ To populate the database:
 ```
 ## How To Test The Code
 Once the database is populated
+
+| Nome          | Cognome       | Codice fiscale   |
+| ------------- |:-------------:| :---------------:|
+| Lucilla       | Fragala       | FRGLLL25L65B960D |
+| Giusto        | Orsini        | RSNGST16B17H861J |
+| Placido       | Danesi        | DNSPCD43C29E910S |
