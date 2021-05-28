@@ -3,8 +3,19 @@
 Quick Care is a Medical Booking Website that allows you to reserve a medical service in a hospital affiliated with the health system of the Lazio Region
 
 ## How To Build And Populate The Database
-On a postgres system run
+To build the database in a postgres system run:
+
 ```
-create database 
+CREATE DATABASE quickcare 
+
+\i QuickCare/Database/database.sql
 ```
+
+To populate the database:
+
+```
+\i QuickCare/Database/data_samples.sql
+```
+
+
 ## How To Test The Code
