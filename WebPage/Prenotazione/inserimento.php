@@ -167,7 +167,7 @@
 
             <?php else: ?>
                 <!-- In caso di sucesso della Query, se il paziente era gia presente nel Batabase 
-                    viene generato un panello con il recup dei suoi dati personali-->
+                    viene generato un pannello con il recup dei suoi dati personali-->
                 <?php if(!$resultPat): ?>
                     <?php json_encode($cf);?>
                     <p class="flip" >

@@ -1,4 +1,5 @@
--- \i /home/leeoos/Projects/QuickCare/Database/database.sql --
+-- PER COSTRUIRE IL DATABASE --
+-- \i FILEPATH/database.sql --
 
 /* CREAZIONE DELLO SCHEMA */
 DROP SCHEMA public CASCADE;

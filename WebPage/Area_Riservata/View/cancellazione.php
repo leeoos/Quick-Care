@@ -44,7 +44,7 @@
             $delete = "DELETE FROM prenotazione 
                         WHERE codice =" .$codice ;
 
-            $result = @pg_query($delete);// or die('Query failed: ' . pg_last_error());
+            $result = @pg_query($delete);
             $err = pg_last_error();
 
         ?>

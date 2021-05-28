@@ -100,7 +100,7 @@
             $resultPrim = pg_query($queryPrim) or die('Query failed: ' . pg_last_error());
             $resultSec = pg_query($querySec) or die('Query failed: ' . pg_last_error());
             
-            // spampa in 'echo' dei risultati della Query sottoforma di tabella, se disponibili
+            // stampa in 'echo' dei risultati della Query sottoforma di tabella, se disponibili
             if (pg_num_rows($resultPrim) == 0 and pg_num_rows($resultSec) == 0) {
                 echo "<p>Non ci sono date disponibile per la prestazione richiesta</p>";
             }

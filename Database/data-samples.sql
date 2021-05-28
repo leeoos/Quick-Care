@@ -1,5 +1,5 @@
-
--- \i /home/leeoos/Projects/QuickCare/Database/data_samples.sql 
+-- PER POPOLARE IL DATABASE --
+-- \i THIS-FILE-PATH/data_samples.sql 
 
 BEGIN;
 

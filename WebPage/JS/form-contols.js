@@ -1,4 +1,4 @@
-// Inizializazione di variabili di controllo
+// Inizializzazione di variabili di controllo
 var prestazione = null;
 var privacyInfo = null;
 var specialCharOne = "/ \\ [ ! ?  < > @ # $ % ^ & * ";
@@ -7,7 +7,7 @@ var specialCharTow = "( ) _ + - = [ ] { } \" ' ; : , . ";
 //Funzioni di controllo
 
 // Controllo che il nome sia stato inserito 
-// non si un numero
+// non sia un numero
 // non contenga caratteri speciali
 function checkName() {
     var nome = document.formPren.name.value;
@@ -28,7 +28,7 @@ function checkName() {
 }
 
 // Controllo che il cognome sia stato inserito 
-// non si un numero
+// non sia un numero
 // non contenga caratteri speciali
 function checkSurName() {
     var cognome = document.formPren.surname.value;
@@ -49,7 +49,7 @@ function checkSurName() {
 }
 
 // Controllo che il codice fiscale sia stato inserito 
-// non si un numero
+// non sia un numero
 // non contenga caratteri speciali
 function checkCF() {
     var cf = document.formPren.cf.value
@@ -95,7 +95,6 @@ function checkEmail() {
 // Funzione di validazione del Form 
 // richiama in automatico tutte le funzioni di controllo
 function validForm() {
-    //alert("validating");
 
     if (! checkName()) {
         return false;
