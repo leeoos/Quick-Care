@@ -1,5 +1,3 @@
--- PER POPOLARE IL DATABASE --
--- \i THIS-FILE-PATH/data_samples.sql 
 
 BEGIN;
 

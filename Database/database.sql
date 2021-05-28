@@ -1,5 +1,3 @@
--- PER COSTRUIRE IL DATABASE --
--- \i FILEPATH/database.sql --
 
 /* CREAZIONE DELLO SCHEMA */
 DROP SCHEMA public CASCADE;

@@ -6,7 +6,7 @@ Quick Care is a Medical Booking Website that allows you to reserve a medical ser
 To build the database in a postgres system run:
 
 ```
-CREATE DATABASE quickcare 
+CREATE DATABASE quickcare;
 
 \i QuickCare/Database/database.sql
 ```
@@ -16,6 +16,5 @@ To populate the database:
 ```
 \i QuickCare/Database/data_samples.sql
 ```
-
-
 ## How To Test The Code
+Once the database is populated
