@@ -15,9 +15,13 @@
         <?php
             $cf = $_GET['q'];
 
-            $dbconn = pg_connect("host=localhost port=5432
-                dbname=quickcare user=leeoos password=password")
-                or die('Could not connect: ' . pg_last_error());
+            //$dbconn = pg_connect("host=localhost port=5432
+                //dbname=quickcare user=leeoos password=password")
+                //or die('Could not connect: ' . pg_last_error());
+
+            // Connessione al Database locale quickcare
+            include 'connect.php';
+            $dbconn = connect();
 
             $info="SELECT nome, cognome
                     FROM  paziente
@@ -33,7 +37,6 @@
             $cf = str_replace( array("'"), '', $cf);
             echo $cf."<br>";
             echo implode(", ", $line);
-            
 
             // Free resultset
             pg_free_result($result);

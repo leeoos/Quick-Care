@@ -114,9 +114,8 @@
             $id = "'".$med_osp[7]."'";
 
             // Connessione al Database locale quickcare
-            $dbconn = pg_connect("host=localhost port=5432
-                dbname=quickcare user=leeoos password=password")
-                or die('Could not connect: ' . pg_last_error());
+            include '../connect.php';
+            $dbconn = connect();
     
             // Esecuzione della Query per l'inserimento del paziente
             $insertPat=
@@ -184,7 +183,7 @@
                 <?php endif; ?>
 
                 <br><br>
-                <!-- Area con Recup dei dettagli dell'appuntamento -->
+                <!-- Area con Recap dei dettagli dell'appuntamento -->
                 <div>
                     <h2> Dettagli Appuntamento </h2>
                     <?php

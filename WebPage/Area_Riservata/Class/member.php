@@ -6,10 +6,10 @@ class Member
 {   
     // Funzione php per il processamento del Log In
     public function processLogin($username, $pwd) {
-        // Conessione al database quickcare
-        $dbconn = pg_connect("host=localhost port=5432
-            dbname=quickcare user=leeoos password=password")
-            or die('Could not connect: ' . pg_last_error());
+        // Connessione al Database locale quickcare
+        $rootDir = realpath($_SERVER["DOCUMENT_ROOT"]);
+        include $rootDir.'/WebPage/connect.php';
+        $dbconn = connect();
 
         // codifica della password in md5
         $pwdH = md5($pwd);

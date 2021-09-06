@@ -36,9 +36,9 @@
             $result = "";
 
             // Connessione al Database locale quickcare
-            $dbconn = pg_connect("host=localhost port=5432
-                dbname=quickcare user=leeoos password=password")
-                or die('Could not connect: ' . pg_last_error());
+            $rootDir = realpath($_SERVER["DOCUMENT_ROOT"]);
+            include $rootDir.'/WebPage/connect.php';
+            $dbconn = connect();
 
             // esecuzione della Query di cancellazione
             $delete = "DELETE FROM prenotazione 

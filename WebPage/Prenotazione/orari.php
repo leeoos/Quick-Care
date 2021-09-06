@@ -38,9 +38,8 @@
             $formatOsp = array();
 
             // Connessione al Database locale quickcare
-            $dbconn = pg_connect("host=localhost port=5432
-                        dbname=quickcare user=leeoos password=password")
-                or die('Could not connect: ' . pg_last_error());
+            include '../connect.php';
+            $dbconn = connect();
 
             // Esecuzione di due query per la selezione degli ospedali primari e secondari
             $queryPrim = '  SELECT  ospedale.nome, (ospedale).indirizzo.via, (ospedale).indirizzo.civico,
